@@ -1,0 +1,57 @@
+setting파일
+1번째는 seed값 다른조건이 다같아도 seed가 다르면 다른결과가나옴
+2번째는 감염반경 1 이 프로그램에서 40m임
+3번째는 잠복기 잠복기가지나면 발병상태가됨 1이 프로그램에서의 30분
+4번째는 감염시작위치 0~119범위로 총 120개
+5번째는 치사시간 발병후 치사시간이 지난후 사망 사망자는 정지후 감염시키지않음
+opencv파일은 건들지말것
+
+population_movement파일
+강원도내에서의 인구유동이 기록되있음
+
+roadgraph파일
+강원도내에서의 도로연결이 기록되있음
+
+testimg파일
+지도파일
+
+과제연구exe
+실행파일 종료할때는 자동종류하게냅두거나 x를 눌러 정상종료시켜야함
+종료조건은 90퍼센트이상감염혹은 unborn이 0
+nographic은 그래픽없앰 movecnt만나옴
+
+키보드 상하좌우로 화면이동
+R은 화면표시
+C는 캡쳐활성화
+W는 현재상황기록
+프로그램종료시 마지막감염사진 저장
+
+result_xxxx파일
+xxxx는 날짜를 나타내고
+이파일에 시뮬레이션결과가 기록됨
+실행파일경로에 저장됨
+seed, setting은 프로그램 시작할때 입력한값
+roadrank_posi는 발병하지않은 보균자가 도로를 통과한횟수 
+roadrank_acti는 발병자가 도로를 통과한횟수
+roadrank_nega는 정상인이 도로를 통과한횟수
+roadrank_current는 위 3개 합산
+movecount는 반복횟수
+unborn은 보균자
+outbreaker는 발병자
+dead는 사망자
+normal는 비감염자
+infectionout은 보균,발병자가 강원도외로 나간횟수
+infectionpopulation은 총 감염자수
+infection_by_acti는 발병자가 감염시킨 수
+infection_by_posi는 보균자가 감염시킨 수
+infectionpercent는
+전체인구의 X%가 감염되기까지 걸린 시간 1이 30분
+
+simulating 배치파일
+프로그램자동실행
+끄면 프로그램재실행멈춤
+프로그램이 멈추지는 않음
+nographic은 그래픽없는버전을 계속실행함
+
+
+프로그램종료시 seed는 랜덤으로 변하고 나머지값은 고정
